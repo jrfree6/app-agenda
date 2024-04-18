@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AgendaApp</string>
+    <string name="username" />
+    <string name="password" />
+    <string name="login">Login</string>
+    <string name="logoengenharia" />
+</resources>

@@ -1,0 +1,3 @@
+https://medium.com/quick-code/working-with-restful-apis-in-android-retrofit-volley-okhttp-eb8d3ec71e06
+
+https://www.guj.com.br/t/ler-conteudo-de-um-objeto-e-jogar-numa-string/25481/8
