@@ -8,7 +8,7 @@ import com.sun.jersey.api.client.WebResource;
 
 public class Service {
 
-    private String url = "http://192.168.0.103:8080/app-agenda/api";
+    private String url = "http://192.168.38.73:8080/app-agenda/api";
     private Client clientJersey = null;
     private WebResource resource = null;
     public Service(){
@@ -24,7 +24,7 @@ public class Service {
 
         Gson gson = new Gson();
         String json =gson.toJson(object);
-//        WebResource resource = clientJersey.resource(url);
+        WebResource resource = clientJersey.resource(url);
 
         Log.i(null, "JSON:" + json);
         String resposta = resource.path(path)
@@ -40,7 +40,7 @@ public class Service {
      */
     public String Get(String path){
 
-//        WebResource resource = clientJersey.resource(url);
+        WebResource resource = clientJersey.resource(url);
         String resposta = resource.path(path)
                 .header("Content-Type","application/json")
                 .get(String.class);
